@@ -1,9 +1,12 @@
 package com.company.session3.polymorphism.compiletime;
 
-public class Student {
+import java.io.Serializable;
 
-    String name;
-    int age;
+public class Student implements Serializable {
+
+    private static final long serialVersionUID = 2340164824848144194L;
+    public String name;
+    public int age;
 
 
     public Student() {
